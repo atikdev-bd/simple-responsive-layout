@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flex</title>
 
     <style>
-
-        .container{
+        .container {
             display: flex;
             gap: 20px;
         }
-        .box{
+
+        .box {
             background-color: aquamarine;
             border-radius: 10px;
             padding: 10px;
             /* margin: 10px; */
         }
+
+        .container-2 {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+        }
+
+        .item {
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+            border-radius: 10px;
+
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+
+                flex-direction: column;
+            }
+
+        }
     </style>
-</head> 
+</head>
+
 <body>
     <h2>Flexible flex</h2>
     <div class="container">
         <div class="box">
-        <h3>box-1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum optio, ea laudantium atque in numquam a autem officia enim, aliquid nostrum error harum ipsam nisi nihil aut! Totam nulla expedita saepe sit perferendis. Itaque, esse? Inventore numquam explicabo eos, illo nobis repellat culpa ea dolorem sunt unde facere dolorum maiores beatae praesentium necessitatibus repudiandae corrupti incidunt ipsum?</p>
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum optio, ea laudantium atque in
+                numquam a autem officia enim, aliquid nostrum error harum ipsam nisi nihil aut! Totam nulla expedita
+                saepe sit perferendis. Itaque, esse? Inventore numquam explicabo eos, illo nobis repellat culpa ea
+                dolorem sunt unde facere dolorum maiores beatae praesentium necessitatibus repudiandae corrupti incidunt
+                ipsum?</p>
         </div>
         <div class="box">
             <h3>box-2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum optio, ea laudantium atque in numquam a
-                autem officia enim, aliquid nostrum error harum ipsam nisi nihil aut! Totam nulla expedita saepe sit perferendis.
-                Itaque, esse? Inventore numquam explicabo eos, illo nobis repellat culpa ea dolorem sunt unde facere dolorum maiores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum optio, ea laudantium atque in
+                numquam a
+                autem officia enim, aliquid nostrum error harum ipsam nisi nihil aut! Totam nulla expedita saepe sit
+                perferendis.
+                Itaque, esse? Inventore numquam explicabo eos, illo nobis repellat culpa ea dolorem sunt unde facere
+                dolorum maiores
                 beatae praesentium necessitatibus repudiandae corrupti incidunt ipsum?</p>
         </div>
     </div>
+
+    <div class="container-2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+    </div>
 </body>
+
 </html>
