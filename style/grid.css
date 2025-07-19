@@ -1,0 +1,30 @@
+.box {
+    background-color: rgb(35, 125, 160);
+    border: 5px solid rgb(146, 78, 224);
+    border-radius: 5px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+    gap: 10px;
+}
+
+#box-1 {
+    grid-row: span 5;
+}
+
+#box-11,
+#box-12 {
+    grid-column: span 3;
+}
+
+#box-6,
+#box-7,
+#box-9,
+#box-10 {
+    background-color: lightpink;
+
+}
